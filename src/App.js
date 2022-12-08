@@ -13,7 +13,7 @@ const App = () => {
         </nav>
         <Routes>
           <Route exact path='/' element={<Home />} />
-          <Route path='/:id/' element={<Pokemon />} />
+          <Route path='/:index/' element={<Pokemon />} />
           <Route path='*' element={<Home />} />
         </Routes>
       </Router>

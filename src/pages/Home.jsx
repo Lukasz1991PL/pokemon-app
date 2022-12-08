@@ -21,12 +21,12 @@ export const Home = () => {
   }, []);
 
   return (
-    <div className='App'>
+    <div className='app-container'>
       <h1>Choose your Pokemon and get info about it! </h1>
       {loading && <div>Loading ..</div>}
       {error && <div>{error}</div>}
       {
-        <div>
+        <div className='pokemon-container'>
           <ul>
             {newData &&
               newData.map((pokemon) => (
