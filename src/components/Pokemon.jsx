@@ -15,11 +15,11 @@ export const Pokemon = () => {
       {loading && <div>Is loading</div>}
       {error && <div>{error}</div>}
       <ul>
-        <li>{name}</li>
-        <li>{height}</li>
-        <li>{weight}</li>
+        <li>Name:{name}</li>
+        <li>Height:{height}</li>
+        <li>Weight:{weight}</li>
         <li>
-          <img src={sprites?.back_default} alt='' />
+          <img src={sprites?.other.dream_world.front_default} alt='' />
         </li>
       </ul>
     </div>
